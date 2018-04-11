@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="musicLIT" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="ALU-rJ-dhh">
+                                <rect key="frame" x="24" y="60" width="327" height="567"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H4b-uI-5hJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="327" height="189"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="44"/>
+                                        <state key="normal" title="▶︎" backgroundImage="aki.png">
+                                            <color key="titleColor" red="0.31717175250000001" green="0.85373806949999997" blue="0.49934240200000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="akiButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ACR-OQ-U8P"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ZV-PU-5lZ">
+                                        <rect key="frame" x="0.0" y="189" width="327" height="189"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="44"/>
+                                        <state key="normal" title="▶︎" backgroundImage="ame.png">
+                                            <color key="titleColor" cyan="0.0016729603519999999" magenta="0.70258246530000001" yellow="0.2416798621" black="0.00054864276899999997" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="ameButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KVC-pR-dLe"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BmN-VU-kuY">
+                                        <rect key="frame" x="0.0" y="378" width="327" height="189"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="44"/>
+                                        <state key="normal" title="▶︎" backgroundImage="natsu.png">
+                                            <color key="titleColor" red="1" green="0.83137254900000002" blue="0.38431372549999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="natsuButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="O6y-sO-rhv"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ALU-rJ-dhh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="7M4-NB-1Sg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ALU-rJ-dhh" secondAttribute="trailing" constant="24" id="OAK-qv-cvb"/>
+                            <constraint firstItem="ALU-rJ-dhh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="hPg-kQ-hfo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ALU-rJ-dhh" secondAttribute="bottom" constant="40" id="xBn-rz-tOE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="aki.png" width="400" height="332"/>
+        <image name="ame.png" width="376" height="400"/>
+        <image name="natsu.png" width="400" height="285"/>
+    </resources>
+</document>
